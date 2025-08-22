@@ -142,7 +142,7 @@ const App: React.FC = () => {
             // IMPORTANTE: Reemplaza este Client ID con el tuyo desde la Consola de Google Cloud.
             // Para que funcione, debes añadir tu dominio (ej. http://localhost:3000) a los
             // "Orígenes de JavaScript autorizados" en las credenciales de tu proyecto.
-            client_id: '446423243063-4tr7t2catft0ghjhtu5ovbgr6d7t6njh.apps.googleusercontent.com',
+            client_id: '446423243063-v6b9d8pmpa6atsp1lefc0rtah5p8mcar.apps.googleusercontent.com',
             callback: handleLoginSuccess
         });
         window.google.accounts.id.renderButton(
