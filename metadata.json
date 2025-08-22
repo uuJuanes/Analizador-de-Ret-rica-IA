@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Analizador de Retórica IA",
+  "description": "Una herramienta con IA para analizar textos en busca de recursos retóricos (Ethos, Pathos, Logos), proporcionando puntuaciones, feedback y ejercicios personalizados para mejorar la escritura persuasiva.",
+  "requestFramePermissions": [
+    "microphone",
+    "clipboard-read"
+  ]
+}

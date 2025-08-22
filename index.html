@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analizador de Retórica IA</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#4f46e5', // indigo-600
+                dark: '#4338ca',    // indigo-700
+                light: '#eef2ff',   // indigo-50
+              },
+              rhetoric: {
+                ethos: '#16a34a',   // green-600
+                pathos: '#c026d3',  // fuchsia-600
+                logos: '#2563eb',   // blue-600
+              }
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+            },
+          },
+        },
+        darkMode: 'class',
+      }
+    </script>
+    <style>
+      :root {
+        --recharts-grid-color: #e2e8f0; /* slate-200 */
+        --recharts-text-color: #64748b; /* slate-500 */
+        --recharts-tooltip-bg: #f8fafc; /* slate-50 */
+        --recharts-tooltip-border: #e2e8f0; /* slate-200 */
+      }
+      .dark {
+        --recharts-grid-color: #475569; /* slate-600 */
+        --recharts-text-color: #94a3b8; /* slate-400 */
+        --recharts-tooltip-bg: #1e293b; /* slate-800 */
+        --recharts-tooltip-border: #334155; /* slate-700 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.14.0",
+    "recharts": "https://esm.sh/recharts@^3.1.2",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "jwt-decode": "https://esm.sh/jwt-decode@^4.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-indigo-50 dark:bg-slate-950">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
